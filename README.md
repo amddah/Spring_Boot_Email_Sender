@@ -11,4 +11,4 @@ java email sender
 
 
 ## Run
-To run this application, add your email and password to environment variables.
+`http://localhost:8081/send-mail` with post method
