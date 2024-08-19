@@ -3,15 +3,20 @@ package com.example.emailsender.controller;
 import com.example.emailsender.Service.EmailSenderService;
 import com.example.emailsender.resources.EmailMessage;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 @RestController
-
+@CrossOrigin
 public class EmailController {
 
     private final EmailSenderService emailSenderService;
+
+    @GetMapping("/home")
+    public ModelAndView contact(){
+        return new ModelAndView("contact");
+    }
+
 
     public EmailController(EmailSenderService emailSenderService) {
         this.emailSenderService = emailSenderService;

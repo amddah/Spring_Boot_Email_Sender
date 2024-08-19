@@ -18,7 +18,7 @@ public class EmailSenderServiceImpl implements EmailSenderService {
     public void SendEmail(String to, String subject, String message) {
         SimpleMailMessage simpleMailMessage =new SimpleMailMessage();
 
-        simpleMailMessage.setFrom("your Email@gmail.com");
+        simpleMailMessage.setFrom("portfolioabdo@gmail.com");
         simpleMailMessage.setTo(to);
         simpleMailMessage.setSubject(subject);
         simpleMailMessage.setText(message);
