@@ -29,7 +29,7 @@ public class EmailController {
 
     @PostMapping("/send-mail")
     public ResponseEntity sendEmail(@RequestBody EmailMessage emailMessage){
-        this.emailSenderService.SendEmail(emailMessage.getTo(),emailMessage.getSubject(),emailMessage.getMessage());
+        this.emailSenderService.SendEmail(emailMessage.getDist(),emailMessage.getSubject(),emailMessage.getMessage());
 
         return ResponseEntity.ok("succes !");
     }

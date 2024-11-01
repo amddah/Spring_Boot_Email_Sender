@@ -2,20 +2,20 @@ package com.example.emailsender.resources;
 
 public class EmailMessage {
 
-    private String to;
+    private String  dist;
     private String subject;
     private String message;
 
     public EmailMessage() {
     }
     public EmailMessage(String to, String subject, String message) {
-        this.to = to;
+        this.dist = to;
         this.subject = subject;
         this.message = message;
     }
 
-    public void setTo(String to) {
-        this.to = to;
+    public void setDist(String to) {
+        this.dist = to;
     }
 
     public void setSubject(String subject) {
@@ -26,8 +26,8 @@ public class EmailMessage {
         this.message = message;
     }
 
-    public String getTo() {
-        return to;
+    public String getDist() {
+        return dist;
     }
 
     public String getSubject() {
